@@ -100,6 +100,10 @@
                 padding:25px;
                 background: #000000;
               }
+              .err-msg{
+                font-weight: 800;
+                font-size: 20;
+              }
     </style>
 </head>
 <body>
@@ -112,9 +116,6 @@
         <section class="container">
           <div class="main_box">
             <div class="one">
-              <!-- <img
-                src="https://www.crowdstrike.com/wp-content/uploads/2021/12/Blog_1060x698-10.jpeg"
-                alt="logo"><br> -->
               
               <h4>
                 Login
@@ -135,9 +136,11 @@
 
             </form><br><br>
             <footer>
-                 {% for message in messages %}
-                   <p>{{message}}</p>
-                 {% endfor %}
+              <div class="err-msg">
+                {% for message in messages %}
+                  <p>{{message}}</p>
+                {% endfor %}
+              </div>
 
               <a href="">Don't You Have a Account? </a>
             </footer>

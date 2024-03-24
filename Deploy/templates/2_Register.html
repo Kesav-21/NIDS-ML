@@ -102,6 +102,10 @@
                 padding:25px;
                 background: rgb(0, 0, 0)
               }
+              .err-msg{
+                font-weight: 800;
+                font-size: 20;
+              }
     </style>
 </head>
 <body>
@@ -113,11 +117,7 @@
         </div>
         <section class="container">
           <div class="main_box">
-            <div class="one">
-              <!-- <img
-                src="https://www.crowdstrike.com/wp-content/uploads/2021/12/Blog_1060x698-10.jpeg"
-                alt="logo"> -->
-              
+            <div class="one">              
               <h4>
                 TO REGISTER YOUR ACCOUNT
               </h4>
@@ -146,6 +146,13 @@
 
             </form><br>
             <footer>
+              <div class="err-msg">
+                <ul>
+                {% for message in messages %}
+                  <p>{{message}}</p>
+                  {% endfor %}
+                </ul>
+              </div>
 
               <a href="#">Do You Have a Account? </a>
             </footer>

@@ -20,6 +20,8 @@ def Register_2(request):
             user = form.cleaned_data.get('username')
             messages.success(request, 'Account was successfully created. ' + user)
             return redirect('Login_3')
+        else:
+            messages.error(request,form.errors)
 
     context = {'form':form}
     return render(request, '2_Register.html', context)
@@ -67,7 +69,7 @@ def Per_Info_8(request):
         form = UserPersonalForm(request.POST)    
         return render(request, '8_Per_Info.html', {'form':form})
     
-Model = joblib.load('D:\ITPML20-FINAL CODING\ITPML20-FINAL CODING\Deploy\PROJECT\APP\INTRUSION.pkl')
+Model = joblib.load('APP\INTRUSION.pkl')
 
     
 def Deploy_9(request): 

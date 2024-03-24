@@ -21,7 +21,7 @@
                 background-image: linear-gradient(to right bottom, #828282, #839fb5, #5fc5d0, #73e7b8, #d6fb84);
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 flex-direction: column;
             }
 
@@ -80,16 +80,27 @@
                 opacity: 1;
                 transform: scale(1.2);
             }
+            .login>a{
+                color: blue;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .login{
+                background-color: #839fb5;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
 
     </style>
 </head>
 <body>
     <h2>PERSONAL INFO DATABASE</h2>
-<div class="table-section">
-    <table id="table">
-        <tr class="header-row">
-
-            <th class="header-item items">firstname</th>
+    <div class="table-section">
+        <table id="table">
+            <tr class="header-row">
+                
+                <th class="header-item items">firstname</th>
             <th class="header-item items">lastname</th>
             <th class="header-item items">age</th>
             <th class="header-item items">address</th>
@@ -97,12 +108,12 @@
             <th class="header-item items">city</th>
             <th class="header-item items">state</th>
             <th class="header-item items">country</th>
-
+            
         </tr>
- 
-            {% for model in models %}
-                <tr class="table-rows">
-                    <td class="items">{{ model.firstname }}</td>
+        
+        {% for model in models %}
+        <tr class="table-rows">
+            <td class="items">{{ model.firstname }}</td>
                     <td class="items">{{ model.lastname }}</td>
                     <td class="items">{{ model.age }}</td>
                     <td class="items">{{ model.address }}</td>
@@ -115,6 +126,8 @@
             
         </tr>
     </table>
+    
 </div>
+<button class="login"><a href="{% url 'Home_4' %}">Home</a></button>
 </body>
 </html>
