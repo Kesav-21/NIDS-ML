@@ -1,0 +1,52 @@
+PROJECT TITLE:
+
+Network Intrustion Detection System Using Learning Based Approaches  
+
+STEPS TO RUN THE PROJECT:
+
+Step 1: Download the source code from GitHub link : https://github.com/Kesav-21/NIDS-ML
+
+Step 2: Download 
+           	1. Python IDLE
+	   	2. Visual Studio Code
+		3. Packages to import
+			asgiref==3.7.2
+			blinker==1.6.2
+			click==8.1.3
+			colorama==0.4.6
+			Django==5.0.3
+			Flask==2.3.2
+			itsdangerous==2.1.2
+			Jinja2==3.1.2
+			joblib==1.3.2
+			MarkupSafe==2.1.2
+			numpy==1.26.4
+			scikit-learn==1.3.0
+			scipy==1.12.0
+			sqlparse==0.4.4
+			threadpoolctl==3.3.0
+			tzdata==2024.1
+			Werkzeug==2.3.4
+Step 3: Install the Packages using Anaconda Navigator or Using the requirements.txt
+
+pip install -r /path/to/requirements.txt
+
+Step 4:  Save all the codes in a folder, example  D:\NIDS
+
+Step 4: Launch Visual Studio Code and import all the needed files.
+
+Step 5: Run the Python file and open new terminal.
+
+Step 6: After opening the terminal C:\NIDS\Deploy>
+
+Step 7: Next Type the Command "py manage.py runserver" and press ENTER key.
+
+Step 8: Next Navigate to Browser open the localhost.
+
+Step 9: In the localhost enter the username and password.
+
+Step 10: Enter the Network Status Data from the project folder.
+
+Step 11: Next click on the Predict.
+
+Step 12: After that output will be predicted and displayed.
