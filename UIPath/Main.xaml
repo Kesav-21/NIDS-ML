@@ -1,0 +1,1084 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="885.6,14739.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="896,14674.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="duration" />
+      <Variable x:TypeArguments="x:String" Name="protocol_type" />
+      <Variable x:TypeArguments="x:String" Name="service" />
+      <Variable x:TypeArguments="x:String" Name="urgent" />
+      <Variable x:TypeArguments="x:String" Name="hot" />
+      <Variable x:TypeArguments="x:String" Name="num_failed_logins" />
+      <Variable x:TypeArguments="x:String" Name="logged_in" />
+      <Variable x:TypeArguments="x:String" Name="num_compromised" />
+      <Variable x:TypeArguments="x:String" Name="root_shell" />
+      <Variable x:TypeArguments="x:String" Name="su_attempted" />
+      <Variable x:TypeArguments="x:String" Name="num_root" />
+      <Variable x:TypeArguments="x:String" Name="num_file_creations" />
+      <Variable x:TypeArguments="x:String" Name="num_shells" />
+      <Variable x:TypeArguments="x:String" Name="num_access_files" />
+      <Variable x:TypeArguments="x:String" Name="num_outbound_cmds" />
+      <Variable x:TypeArguments="x:String" Name="is_host_login" />
+      <Variable x:TypeArguments="x:String" Name="is_guest_login" />
+      <Variable x:TypeArguments="x:String" Name="count" />
+      <Variable x:TypeArguments="x:String" Name="srv_count" />
+      <Variable x:TypeArguments="x:String" Name="serror_rate" />
+      <Variable x:TypeArguments="x:String" Name="srv_serror_rate" />
+      <Variable x:TypeArguments="x:String" Name="rerror_rate" />
+      <Variable x:TypeArguments="x:String" Name="srv_rerror_rate" />
+      <Variable x:TypeArguments="x:String" Name="same_srv_rate" />
+      <Variable x:TypeArguments="x:String" Name="diff_srv_rate" />
+      <Variable x:TypeArguments="x:String" Name="srv_diff_host_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_count" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_srv_count" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_same_srv_count" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_same_srv_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_diff_srv_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_same_src_port_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_srv_diff_host_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_serror_rate" />
+      <Variable x:TypeArguments="x:String" Name="src_bytes" />
+      <Variable x:TypeArguments="x:String" Name="flag" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_srv_serror_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_rerror_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_host_srv_rerror_rate" />
+      <Variable x:TypeArguments="x:String" Name="dst_bytes" />
+      <Variable x:TypeArguments="x:String" Name="land" />
+      <Variable x:TypeArguments="x:String" Name="wrong_fragments" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Document - Brave" sap:VirtualizedContainerService.HintSize="833.6,14585.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="3806789c-a369-4d0c-bfc3-f3e6d4ac4d36" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,14271.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '127.0.0.1:8000/Deploy_9/'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="737.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="3806789c-a369-4d0c-bfc3-f3e6d4ac4d36" Text="127.0.0.1:8000/Deploy_9" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvElementArea="316, 61, 1283, 43" CvType="InputBox" DesignTimeRectangle="374, 66, 1100, 36" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Document - Brave' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Document - Brave' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="788f3552-bc0b-4200-9c2a-b19b09f12afd" InformativeScreenshot="ee419c9964b63cf40b03e5ff98a5dae4.png" ScopeSelectorArgument="&lt;wnd app='brave.exe' cls='Chrome_WidgetWin_1' title='Document - Brave' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="737.6,13924.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="C:\Users\kesav\Documents\Attacks Form Value.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,13630.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="641.6,13542.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,13324.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="545.6,1468" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                              <ui:MultipleAssign.AssignOperations>
+                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="64">
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[duration]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("duration")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[protocol_type]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("protocol_type")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[service]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("service")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[flag]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("flag")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[src_bytes]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("src_bytes")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_bytes]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_bytes")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[land]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("land")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[wrong_fragments]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("wrong_fragment")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[urgent]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("urgent")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[hot]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("hot")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_failed_logins]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_failed_logins")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[logged_in]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("logged_in")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_compromised]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_compromised")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[root_shell]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("root_shell")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[su_attempted]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("su_attempted")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_root]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_root")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_file_creations]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_file_creations")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_shells]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_shells")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_access_files]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_access_files")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[num_outbound_cmds]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("num_outbound_cmds")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[is_host_login]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("is_host_login")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[is_guest_login]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("is_guest_login")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[count]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("count")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[srv_count]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("srv_count")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[serror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("serror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_26">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[srv_serror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("srv_serror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_27">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[same_srv_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("same_srv_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_28">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[diff_srv_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("diff_srv_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[srv_diff_host_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("srv_diff_host_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_30">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_count]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_count")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_31">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_srv_count]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_srv_count")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_32">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_same_srv_count]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_same_srv_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_33">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_diff_srv_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_diff_srv_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_34">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_same_src_port_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_same_src_port_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_35">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_srv_diff_host_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_srv_diff_host_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_36">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_serror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_serror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_37">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_srv_serror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_srv_serror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_38">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_rerror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_rerror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_srv_rerror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_srv_rerror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[rerror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("rerror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[srv_rerror_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("srv_rerror_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[dst_host_same_srv_rate]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("dst_host_same_srv_rate")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_43">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[land]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("land")]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                </scg:List>
+                              </ui:MultipleAssign.AssignOperations>
+                            </ui:MultipleAssign>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Document" sap:VirtualizedContainerService.HintSize="545.6,11768.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="512,11454.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,11366.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'duration'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[duration]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 526, 381, 62" CvType="InputBox" DesignTimeRectangle="115, 531, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a15f5e92-8ac6-4bf7-9c25-4081dbe4615f" InformativeScreenshot="e34eba027098081230109334e9a81bc4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 508, 84, 19" CvTextArgument="duration :" CvType="Text" DesignTimeRectangle="115, 508, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='duration :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='duration :' tag='LABEL' type='' class='' check:text='duration :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'protocol_type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[protocol_type]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="560, 457, 378, 61" CvType="InputBox" DesignTimeRectangle="564, 462, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='protocol_type' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='protocol_type' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e42d7429-334e-40f8-acd9-9293f96daa13" InformativeScreenshot="322d8cc90bffaa0543e98e14447d2ce9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 438, 133, 22" CvTextArgument="protocol type :" CvType="Text" DesignTimeRectangle="564, 439, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='protocol_type :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='protocol_type :' tag='LABEL' type='' class='' check:text='protocol_type :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'service'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[service]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 457, 381, 61" CvType="InputBox" DesignTimeRectangle="1011, 462, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='service' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='service' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="ebd75aae-124a-49b0-a255-b79c49d33dab" InformativeScreenshot="bbd63e05df3843a216225bd3a9a0c50b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 440, 76, 18" CvTextArgument="service :" CvType="Text" DesignTimeRectangle="1011, 439, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='service :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='service :' tag='LABEL' type='' class='' check:text='service :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'flag'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[flag]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 457, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 462, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='flag' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='flag' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="de14d570-d0a3-4217-862b-d12faf1f9de4" InformativeScreenshot="57d1cc914c70fa88a0591728c7591423.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1455, 438, 46, 23" CvTextArgument="flag :" CvType="Text" DesignTimeRectangle="1459, 439, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='flag :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='flag :' tag='LABEL' type='' class='' check:text='flag :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'src_bytes'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[src_bytes]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 645, 380, 61" CvType="InputBox" DesignTimeRectangle="115, 651, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='src_bytes' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='src_bytes' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="838b79dd-b987-4a64-8f2b-2ebad0ae295b" InformativeScreenshot="cd667b4875cab69ec6af0db459862559.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 632, 98, 15" CvTextArgument="src bytes :" CvType="Text" DesignTimeRectangle="115, 628, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='src_bytes :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='src_bytes :' tag='LABEL' type='' class='' check:text='src_bytes :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_bytes'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_bytes]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 645, 379, 62" CvType="InputBox" DesignTimeRectangle="564, 651, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_bytes' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_bytes' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="b942b552-dd33-40cf-8739-c866564e463a" InformativeScreenshot="2657b400bbe284203cbe02deab690c3c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 628, 99, 20" CvTextArgument="dst bytes :" CvType="Text" DesignTimeRectangle="564, 628, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_bytes :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_bytes :' tag='LABEL' type='' class='' check:text='dst_bytes :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'land'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[land]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1005, 646, 380, 61" CvType="InputBox" DesignTimeRectangle="1011, 651, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='land' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='land' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a7e404f9-e86a-4254-a74e-88fe57344035" InformativeScreenshot="9f1f2c1060675da134a8603c174e6346.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 628, 51, 19" CvTextArgument="land :" CvType="Text" DesignTimeRectangle="1011, 628, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='land :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='land :' tag='LABEL' type='' class='' check:text='land :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'wrong_fragment'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[wrong_fragments]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 646, 399, 61" CvType="InputBox" DesignTimeRectangle="1459, 651, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='wrong_fragment' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='wrong_fragment' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="caa7a91e-1795-4a3e-98f2-2b153c8eb7e0" InformativeScreenshot="e5496a91f96a85b45831b3f1848045b4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1455, 632, 158, 18" CvTextArgument="wrong fragment :" CvType="Text" DesignTimeRectangle="1459, 628, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='wrong_fragment :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='wrong_fragment :' tag='LABEL' type='' class='' check:text='wrong_fragment :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'urgent'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[urgent]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 771, 380, 60" CvType="InputBox" DesignTimeRectangle="115, 776, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='urgent' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='urgent' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="beb4b643-dab2-4642-921b-8313d3dcfaf7" InformativeScreenshot="94b5cfad9844d731adaa183d710d06a2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 753, 69, 22" CvTextArgument="urgent :" CvType="Text" DesignTimeRectangle="115, 753, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='urgent :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='urgent :' tag='LABEL' type='' class='' check:text='urgent :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'hot'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[hot]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 771, 379, 60" CvType="InputBox" DesignTimeRectangle="564, 776, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='hot' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='hot' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="3140a515-4dbb-4253-80b3-6d51149e59b2" InformativeScreenshot="fe7f20318cf6d4dff8a065cc3a651a45.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 753, 41, 19" CvTextArgument="hot :" CvType="Text" DesignTimeRectangle="564, 753, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='hot :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='hot :' tag='LABEL' type='' class='' check:text='hot :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_failed_logins'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_failed_logins]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 770, 379, 61" CvType="InputBox" DesignTimeRectangle="1011, 776, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_failed_logins' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_failed_logins' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="6221fd60-a1ac-4e76-92d1-6805ee4bc809" InformativeScreenshot="4e42d440659eeadb8f0177c3c7e34cf5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 757, 174, 15" CvTextArgument="num failed logins :" CvType="Text" DesignTimeRectangle="1011, 753, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_failed_logins :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_failed_logins :' tag='LABEL' type='' class='' check:text='num_failed_logins :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'logged_in'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[logged_in]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1454, 771, 399, 60" CvType="InputBox" DesignTimeRectangle="1459, 776, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='logged_in' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='logged_in' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="8636e1af-11dd-410b-8b45-3b1616954111" InformativeScreenshot="2e160a90aeee82b75faf1157d93050b9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 752, 100, 23" CvTextArgument="logged in :" CvType="Text" DesignTimeRectangle="1459, 753, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='logged_in :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='logged_in :' tag='LABEL' type='' class='' check:text='logged_in :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_compromised'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_compromised]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="113, 895, 378, 62" CvType="InputBox" DesignTimeRectangle="115, 901, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_compromised' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_compromised' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="2bb363bc-8967-461b-9e61-3071af29dc2c" InformativeScreenshot="b5e636d20c01550aeaf03e0fce7377f6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 882, 183, 15" CvTextArgument="num compromised :" CvType="Text" DesignTimeRectangle="115, 878, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_compromised :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_compromised :' tag='LABEL' type='' class='' check:text='num_compromised :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'root_shell'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[root_shell]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="561, 896, 376, 61" CvType="InputBox" DesignTimeRectangle="564, 901, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='root_shell' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='root_shell' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="34e6fb8a-f8ab-45cb-bf37-7be814cd0665" InformativeScreenshot="cf22b8c5c5d41d5af98545059bf8e0f3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 878, 100, 19" CvTextArgument="root shell :" CvType="Text" DesignTimeRectangle="564, 878, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='root_shell :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='root_shell :' tag='LABEL' type='' class='' check:text='root_shell :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'su_attempted'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[su_attempted]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="1011, 901, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='su_attempted' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='su_attempted' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a0de2388-843e-4b68-9b48-42ebf3d6a6d3" InformativeScreenshot="a1cc56e7ce146fd8c8a5b235fbd36367.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="1011, 878, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='su_attempted :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='su_attempted :' tag='LABEL' type='' class='' check:text='su_attempted :' /&gt;" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_root'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_root]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1456, 896, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 901, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_root' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_root' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="3e9b51f9-2810-4896-9f39-b17e69991b4f" InformativeScreenshot="c606d3f87e2c929ffb5890c2d97e8e04.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 882, 97, 16" CvTextArgument="num root :" CvType="Text" DesignTimeRectangle="1459, 878, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_root :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_root :' tag='LABEL' type='' class='' check:text='num_root :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_file_creations'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_file_creations]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="112, 727, 380, 62" CvType="InputBox" DesignTimeRectangle="115, 733, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_file_creations' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_file_creations' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e1894ab3-6140-4dd8-916c-f996d7cbdaea" InformativeScreenshot="46bbe5b684649c1e1f995e4e0b9f1ba5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 713, 180, 17" CvTextArgument="num file creations :" CvType="Text" DesignTimeRectangle="115, 710, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_file_creations :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_file_creations :' tag='LABEL' type='' class='' check:text='num_file_creations :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_shells'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_shells]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 728, 379, 61" CvType="InputBox" DesignTimeRectangle="564, 733, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_shells' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_shells' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="1bbc030b-e2ed-46ad-8428-75eac64aaedf" InformativeScreenshot="643395e326faff598a97dd401cf81f2f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 713, 114, 17" CvTextArgument="num shells :" CvType="Text" DesignTimeRectangle="564, 710, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_shells :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_shells :' tag='LABEL' type='' class='' check:text='num_shells :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_access_files'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_access_files]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 727, 381, 62" CvType="InputBox" DesignTimeRectangle="1011, 733, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_access_files' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_access_files' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="896489a3-fc08-4f06-a1b7-56820e59c239" InformativeScreenshot="c35c486826182ca6ca3be5a718b09b01.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 713, 172, 17" CvTextArgument="num access files :" CvType="Text" DesignTimeRectangle="1011, 710, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_access_files :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_access_files :' tag='LABEL' type='' class='' check:text='num_access_files :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'num_outbound_cmds'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[num_outbound_cmds]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 727, 399, 61" CvType="InputBox" DesignTimeRectangle="1459, 733, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='num_outbound_cmds' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='num_outbound_cmds' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a837e403-aa42-4171-98aa-5faecffddb3e" InformativeScreenshot="1e4bc25f9abd3be0e1394185de28ddc2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 713, 205, 16" CvTextArgument="num outbound cmds :" CvType="Text" DesignTimeRectangle="1459, 710, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='num_outbound_cmds :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='num_outbound_cmds :' tag='LABEL' type='' class='' check:text='num_outbound_cmds :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'is_host_login'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[is_host_login]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 853, 380, 61" CvType="InputBox" DesignTimeRectangle="115, 858, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='is_host_login' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='is_host_login' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="75c4b09f-fc62-4975-bb1f-8eb03d3459fc" InformativeScreenshot="90d6ff1fabdfef1b5e66a7581379a93e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 835, 129, 20" CvTextArgument="is host login :" CvType="Text" DesignTimeRectangle="115, 835, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='is_host_login :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='is_host_login :' tag='LABEL' type='' class='' check:text='is_host_login :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'is_guest_login'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[is_guest_login]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 852, 378, 61" CvType="InputBox" DesignTimeRectangle="564, 858, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='is_guest_login' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='is_guest_login' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="466cb0bb-5cdb-4498-b736-665daf611aba" InformativeScreenshot="a479c9b477e80239448b4ff1b40e7781.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 835, 141, 20" CvTextArgument="is guest login :" CvType="Text" DesignTimeRectangle="564, 835, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='is_guest_login :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='is_guest_login :' tag='LABEL' type='' class='' check:text='is_guest_login :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'count'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[count]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 853, 380, 60" CvType="InputBox" DesignTimeRectangle="1011, 858, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='count' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='count' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="54bea639-772d-4d89-8645-442bf28e6f4b" InformativeScreenshot="7689445b01a6af9e140b47fe21550841.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 835, 61, 20" CvTextArgument="count :" CvType="Text" DesignTimeRectangle="1011, 835, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='count :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='count :' tag='LABEL' type='' class='' check:text='count :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'srv_count'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[srv_count]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1454, 853, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 858, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='srv_count' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='srv_count' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="090d6a04-4460-45d1-8160-12054a8569d4" InformativeScreenshot="70cad4d76a61a48e9561072ae8ae6c9a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 838, 99, 16" CvTextArgument="srv count :" CvType="Text" DesignTimeRectangle="1459, 835, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='srv_count :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='srv_count :' tag='LABEL' type='' class='' check:text='srv_count :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'serror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[serror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 357, 379, 60" CvType="InputBox" DesignTimeRectangle="115, 362, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='serror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='serror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="28e8028b-8192-4af7-b046-1b7ff57f506d" InformativeScreenshot="0c160e6e1a220710813f8086b708d3e9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 343, 110, 16" CvTextArgument="serror rate :" CvType="Text" DesignTimeRectangle="115, 339, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='serror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='serror_rate :' tag='LABEL' type='' class='' check:text='serror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'srv_serror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_32" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[srv_serror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="561, 357, 376, 61" CvType="InputBox" DesignTimeRectangle="564, 362, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='srv_serror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='srv_serror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="7b05a913-c08e-46ad-8d1c-43dad52b56ac" InformativeScreenshot="4d72ee44f334d9d88eed1d0c57c0fcfb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 342, 149, 16" CvTextArgument="srv serror rate :" CvType="Text" DesignTimeRectangle="564, 339, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='srv_serror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='srv_serror_rate :' tag='LABEL' type='' class='' check:text='srv_serror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'rerror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_33" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[rerror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 357, 380, 60" CvType="InputBox" DesignTimeRectangle="1011, 362, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='rerror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='rerror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="0b9d5ccc-e6a3-4d28-bced-d6d5e1c9a20e" InformativeScreenshot="3fceb4d33913ff4b111ed23a5ede2047.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 342, 107, 17" CvTextArgument="rerror rate :" CvType="Text" DesignTimeRectangle="1011, 339, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='rerror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='rerror_rate :' tag='LABEL' type='' class='' check:text='rerror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'srv_rerror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_34" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[srv_rerror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 357, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 362, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='srv_rerror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='srv_rerror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="702eed8d-cdc5-4fd3-826a-ea6f69d0592f" InformativeScreenshot="4089ec85f72e9db9be57bd6226f718a8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 343, 145, 15" CvTextArgument="srv rerror rate :" CvType="Text" DesignTimeRectangle="1459, 339, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='srv_rerror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='srv_rerror_rate :' tag='LABEL' type='' class='' check:text='srv_rerror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'same_srv_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_35" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[same_srv_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="112, 482, 379, 60" CvType="InputBox" DesignTimeRectangle="115, 487, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='same_srv_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='same_srv_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="65ef77a9-58ac-4a9c-981a-168d382bf76c" InformativeScreenshot="30facdd7b9d889fb92119c9ea2e0ad20.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 468, 144, 15" CvTextArgument="same srv rate :" CvType="Text" DesignTimeRectangle="115, 464, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='same_srv_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='same_srv_rate :' tag='LABEL' type='' class='' check:text='same_srv_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'diff_srv_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_36" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[diff_srv_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="560, 482, 378, 60" CvType="InputBox" DesignTimeRectangle="564, 487, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='diff_srv_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='diff_srv_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="da943099-78d4-4058-b278-5f68f95b22f3" InformativeScreenshot="85e10d5895754a02528ca8aff2414f12.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 463, 123, 20" CvTextArgument="diff srv rate :" CvType="Text" DesignTimeRectangle="564, 464, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='diff_srv_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='diff_srv_rate :' tag='LABEL' type='' class='' check:text='diff_srv_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'srv_diff_host_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_37" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[srv_diff_host_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 482, 380, 61" CvType="InputBox" DesignTimeRectangle="1011, 487, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='srv_diff_host_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='srv_diff_host_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="b34d9be3-b0cb-42f7-a61c-9d9777ab897c" InformativeScreenshot="3d8a2c96da9cdc1cd7005e8c006de884.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 468, 171, 15" CvTextArgument="srv diff host rate :" CvType="Text" DesignTimeRectangle="1011, 464, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='srv_diff_host_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='srv_diff_host_rate :' tag='LABEL' type='' class='' check:text='srv_diff_host_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_count'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_38" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_count]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1456, 482, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 487, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_count' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_count' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a57d777e-3bb5-4657-a956-088aea62ca6a" InformativeScreenshot="c72309b5a009a33d714c08139de2f485.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 465, 149, 18" CvTextArgument="dst host count :" CvType="Text" DesignTimeRectangle="1459, 464, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_count :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_count :' tag='LABEL' type='' class='' check:text='dst_host_count :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_srv_count'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_39" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_same_srv_count]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="112, 606, 380, 61" CvType="InputBox" DesignTimeRectangle="115, 612, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_srv_count' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_srv_count' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="5b46743b-e458-42a3-bfbe-e67392df04cd" InformativeScreenshot="261bb50c7b4b3348622e7e783314c94c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 590, 186, 18" CvTextArgument="dst host srv count :" CvType="Text" DesignTimeRectangle="115, 589, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_srv_count :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_srv_count :' tag='LABEL' type='' class='' check:text='dst_host_srv_count :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_same_srv_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_40" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_same_srv_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 606, 378, 61" CvType="InputBox" DesignTimeRectangle="564, 612, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_same_srv_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_same_srv_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="868ba45e-41bd-4a4e-9f51-e1739048faca" InformativeScreenshot="dd22529c3d93141fd328957124289b7d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 590, 232, 18" CvTextArgument="dst host same srv rate :" CvType="Text" DesignTimeRectangle="564, 589, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_same_srv_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_same_srv_rate :' tag='LABEL' type='' class='' check:text='dst_host_same_srv_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_diff_srv_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_41" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_diff_srv_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1007, 606, 378, 61" CvType="InputBox" DesignTimeRectangle="1011, 612, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_diff_srv_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_diff_srv_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="f1c8ef0a-8f3a-4425-b97a-fb24f605e76c" InformativeScreenshot="d2a3b05bd7dfea2646c2a2490bafaef3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 590, 208, 18" CvTextArgument="dst host diff srv rate :" CvType="Text" DesignTimeRectangle="1011, 589, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_diff_srv_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_diff_srv_rate :' tag='LABEL' type='' class='' check:text='dst_host_diff_srv_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_same_src_port_…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_42" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_same_src_port_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 606, 398, 61" CvType="InputBox" DesignTimeRectangle="1459, 612, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_same_src_port_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_same_src_port_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="65db0dc4-2447-4001-8289-31c6d3cb2b51" InformativeScreenshot="533a4dd5bb25e607cecefae6dc6897e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 588, 277, 20" CvTextArgument="dst host same src port rate :" CvType="Text" DesignTimeRectangle="1459, 589, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_same_src_port_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_same_src_port_rate :' tag='LABEL' type='' class='' check:text='dst_host_same_src_port_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_srv_diff_host_…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_43" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_srv_diff_host_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="111, 731, 379, 61" CvType="InputBox" DesignTimeRectangle="115, 737, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_srv_diff_host_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_srv_diff_host_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="ac963ebe-91c7-43a1-8c46-4830db1f8f76" InformativeScreenshot="7b221c94c390dd6128cc74aa18271bc8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 715, 258, 18" CvTextArgument="dst host srv diff host rate :" CvType="Text" DesignTimeRectangle="115, 714, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_srv_diff_host_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_srv_diff_host_rate :' tag='LABEL' type='' class='' check:text='dst_host_srv_diff_host_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_serror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_44" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_serror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="559, 732, 378, 60" CvType="InputBox" DesignTimeRectangle="564, 737, 372, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_serror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_serror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e44d4512-3a19-4b8d-a859-365d43aacfdb" InformativeScreenshot="2bbc2a51c841fd38b15840741a3a15a9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="561, 715, 197, 20" CvTextArgument="dst host serror rate :" CvType="Text" DesignTimeRectangle="564, 714, 372, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_serror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_serror_rate :' tag='LABEL' type='' class='' check:text='dst_host_serror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_srv_serror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_45" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_srv_serror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1007, 732, 378, 60" CvType="InputBox" DesignTimeRectangle="1011, 737, 373, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_srv_serror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_srv_serror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="b8287dcf-c70e-4de0-b57e-64f007120bd2" InformativeScreenshot="620f9cda64c1307e876fbc511560f2ef.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1009, 715, 235, 18" CvTextArgument="dst host srv serror rate :" CvType="Text" DesignTimeRectangle="1011, 714, 373, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_srv_serror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_srv_serror_rate :' tag='LABEL' type='' class='' check:text='dst_host_srv_serror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_rerror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_46" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_rerror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="1455, 732, 398, 60" CvType="InputBox" DesignTimeRectangle="1459, 737, 393, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_rerror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_rerror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="a35c27e6-fac8-4379-bbe8-45928edaded4" InformativeScreenshot="1e0da1cb9df27e66a2c6fde6d532edb6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="1456, 715, 194, 18" CvTextArgument="dst host rerror rate :" CvType="Text" DesignTimeRectangle="1459, 714, 393, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_rerror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_rerror_rate :' tag='LABEL' type='' class='' check:text='dst_host_rerror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'dst_host_srv_rerror_rate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_47" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Text="[dst_host_srv_rerror_rate]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvElementArea="112, 856, 377, 61" CvType="InputBox" DesignTimeRectangle="115, 862, 374, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='dst_host_srv_rerror_rate' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='dst_host_srv_rerror_rate' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="30455973-c651-418b-8119-72878195e053" InformativeScreenshot="994340a9f825e1dc449a4667c6c4342c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArea="113, 840, 231, 18" CvTextArgument="dst host srv rerror rate :" CvType="Text" DesignTimeRectangle="115, 839, 374, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='dst_host_srv_rerror_rate :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='dst_host_srv_rerror_rate :' tag='LABEL' type='' class='' check:text='dst_host_srv_rerror_rate :' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SUBMIT'" sap:VirtualizedContainerService.HintSize="387.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1006, 845, 157, 62" CvTextArea="1053, 867, 66, 16" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="1011, 849, 149, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='SUBMIT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SUBMIT' tag='BUTTON' type='submit' class='buttons button1' check:text='SUBMIT' /&gt;" Guid="7fd48ec4-8ffc-4391-9028-4642bef2f65b" InformativeScreenshot="139d045c8f4560b7cb47d8a6a9f4b52b.png" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="387.2,278.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                        <uix:NMouseScroll.SearchedElement>
+                                          <uix:SearchedElement>
+                                            <uix:SearchedElement.Target>
+                                              <uix:TargetAnchorable CvTextArea="1610, 803, 200, 41" CvTextArgument="RESULT" CvType="Text" DesignTimeRectangle="1612, 798, 196, 56" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='RESULT' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='RESULT' tag='LABEL' type='' class='' check:text='RESULT' /&gt;" Guid="59d3019b-b287-45a7-8610-88fbb0dccebf" InformativeScreenshot="f7e0f4544c8bde5d2c48039fb85d8c86.png" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                            </uix:SearchedElement.Target>
+                                            <uix:SearchedElement.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:SearchedElement.Timeout>
+                                          </uix:SearchedElement>
+                                        </uix:NMouseScroll.SearchedElement>
+                                      </uix:NMouseScroll>
+                                      <uix:NGetText DisplayName="Get Text 'THE NONE'" sap:VirtualizedContainerService.HintSize="387.2,182.4" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="4b034b9f-0f6e-49d8-a57a-954b3c6f3a3a" TextString="[CurrentRow.ByField(&quot;Predicted&quot;).StringValue]" Version="V3">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="881, 634, 1027, 395" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='login' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='login' tag='DIV' type='' aaname='                         ' /&gt;" Guid="e51a8125-3718-4648-9cf5-4a39bbc7fcf4" InformativeScreenshot="c0526a9da938d905376e148758ce09bd.png" ScopeSelectorArgument="&lt;html app='brave.exe' title='Document' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvTextArea="1019, 822, 774, 20" CvTextArgument="THE NONE OF ATTACK MIGHT BE OCCUR IN THIS CONDITION. THIS IS NORMAL" CvType="Text" DesignTimeRectangle="1006, 808, 802, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='THE NONE OF ATTACK MIGHT BE OCCUR IN THIS CONDITION. THIS IS NOR*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='THE NONE OF ATTACK MIGHT BE OCCUR IN THIS CONDITION. THIS IS NOR*' tag='LABEL' type='' class='' check:text='THE NONE OF ATTACK MIGHT BE OCCUR IN THIS CONDITION. THIS IS NORMAL' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                      </uix:NGetText>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" IconBase64="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" InformativeScreenshot="3c3c58c73e8f3e5379c1737e149d261a.png" Selector="&lt;html app='brave.exe' title='Document' /&gt;" Title="Document" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" IconBase64="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" InformativeScreenshot="17297a95176a5f8470eebcf823e2876b.png" Selector="&lt;wnd app='brave.exe' cls='Chrome_WidgetWin_1' title='Document - Brave' /&gt;" Title="Document - Brave" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
